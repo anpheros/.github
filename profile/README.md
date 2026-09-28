@@ -61,6 +61,8 @@ Anpheros' own patient app is a client of the same public API as everyone else, s
 
 ## Quick start
 
+Get a sandbox key instantly: sign in with Google on the [dashboard](https://platform.anpheros.com/dashboard/) and press **Get a sandbox key**. The sandbox is free, and every sandbox project comes with its own 30 synthetic patients.
+
 ```bash
 npm install @anpheros/sdk          # or: dart pub add anpheros_sdk
 ```
@@ -113,7 +115,7 @@ EU data residency · isolation between applications with per-application patient
 
 ## Status
 
-Anpheros Platform is in **private beta**: EU-hosted, single zone without automatic failover, no contractual SLA yet. Access is by request on [platform.anpheros.com](https://platform.anpheros.com/); production access is granted to verified organisations with a data processing agreement. Not available yet: SMART EHR launch, a Model Context Protocol (MCP) server.
+Anpheros Platform is in **private beta**: EU-hosted, single zone without automatic failover, no contractual SLA yet. The sandbox is free and self-service: sign in with Google on the [dashboard](https://platform.anpheros.com/dashboard/) and get a key instantly, with 30 synthetic patients per sandbox project. Production is for verified organisations with a data processing agreement, and the first month of production is free. Not available yet: SMART EHR launch, a Model Context Protocol (MCP) server.
 
 ## For patients
 

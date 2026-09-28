@@ -6,7 +6,8 @@
 | the exact request and response of an endpoint | [API reference (OpenAPI)](https://developers.anpheros.com/docs) |
 | FHIR details | [FHIR platform](https://developers.anpheros.com/guides/fhir) and the [CapabilityStatement](https://platform.anpheros.com/fhir/R4/metadata) |
 | to report a bug in an SDK or an example | an issue in [anpheros-sdk](https://github.com/anpheros/anpheros-sdk/issues) |
-| access to the platform (private beta) | *Request access* on [platform.anpheros.com](https://platform.anpheros.com/) |
+| a sandbox key | free and instant on the [dashboard](https://platform.anpheros.com/dashboard/): sign in with Google, *Get a sandbox key* (30 synthetic patients per sandbox project) |
+| production access (private beta; the first month is free) | contact@anpheros.com |
 | help with your account or the Anpheros Daily app | support@anpheros.com |
 | to report a security issue | our [security policy](SECURITY.md) — not a public issue |
 | anything else | contact@anpheros.com |

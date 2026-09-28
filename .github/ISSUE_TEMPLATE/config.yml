@@ -6,9 +6,9 @@ contact_links:
   - name: API reference
     url: https://developers.anpheros.com/docs
     about: Every endpoint with its request and response.
-  - name: Request access to the platform
-    url: https://platform.anpheros.com/
-    about: Anpheros Platform is in private beta; access is by request.
+  - name: Get a sandbox key
+    url: https://platform.anpheros.com/dashboard/
+    about: Free and instant - sign in with Google and get a sandbox key; every sandbox project has its own 30 synthetic patients. The first month of production is free.
   - name: Report a security issue
     url: https://github.com/anpheros/.github/blob/main/SECURITY.md
     about: Please do not open a public issue for security problems.
