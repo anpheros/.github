@@ -18,6 +18,12 @@
 </p>
 
 <p align="center">
+  <a href="https://developers.anpheros.com/guides/healthcare-api">Healthcare API</a> ·
+  <a href="https://developers.anpheros.com/guides/healthcare-api-platform">Healthcare API platform</a> ·
+  <a href="https://developers.anpheros.com/guides/fhir">FHIR platform</a>
+</p>
+
+<p align="center">
   <a href="https://pub.dev/packages/anpheros_sdk"><img alt="pub.dev" src="https://img.shields.io/pub/v/anpheros_sdk?label=pub.dev%20anpheros_sdk"></a>
   <a href="https://www.npmjs.com/package/@anpheros/sdk"><img alt="npm" src="https://img.shields.io/npm/v/%40anpheros%2Fsdk?label=npm%20%40anpheros%2Fsdk"></a>
   <a href="https://github.com/anpheros/anpheros-sdk/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anpheros/anpheros-sdk/actions/workflows/ci.yml/badge.svg"></a>
