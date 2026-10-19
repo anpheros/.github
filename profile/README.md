@@ -5,22 +5,28 @@
 <h1 align="center">Anpheros</h1>
 
 <p align="center">
-  <b>Interoperable medical-data infrastructure for building healthcare applications, medical software and AI services.</b><br>
+  <b>Anpheros is a FHIR R4 healthcare API where each patient controls their own record, with a free sandbox, SDKs and an MCP server for AI agents.</b><br>
   One patient-controlled HL7&nbsp;FHIR&nbsp;R4 record per person · an API for applications, clinics, laboratories and AI agents · consent, provenance and an audit built in.
 </p>
 
 <p align="center">
-  <a href="https://developers.anpheros.com/guides/"><b>Developer guides</b></a> ·
-  <a href="https://developers.anpheros.com/docs">API reference</a> ·
-  <a href="https://github.com/anpheros/anpheros-sdk">SDKs &amp; examples</a> ·
-  <a href="https://platform.anpheros.com/">Platform</a> ·
-  <a href="https://anpheros.com/">anpheros.com</a>
+  <a href="https://platform.anpheros.com/dashboard/?utm_source=github&utm_medium=readme&utm_content=org-profile"><img alt="Get a free sandbox key" src="https://img.shields.io/badge/Get%20a%20free%20sandbox%20key-2f5bd3?style=for-the-badge"></a>
+  <a href="https://platform.anpheros.com/?utm_source=github&utm_medium=readme&utm_content=org-profile"><img alt="Platform" src="https://img.shields.io/badge/Platform-0e1a33?style=for-the-badge"></a>
+  <a href="https://developers.anpheros.com/?utm_source=github&utm_medium=readme&utm_content=org-profile"><img alt="Developer docs" src="https://img.shields.io/badge/Developer%20docs-44619e?style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <a href="https://developers.anpheros.com/guides/healthcare-api">Healthcare API</a> ·
-  <a href="https://developers.anpheros.com/guides/healthcare-api-platform">Healthcare API platform</a> ·
-  <a href="https://developers.anpheros.com/guides/fhir">FHIR platform</a>
+  <a href="https://developers.anpheros.com/guides/?utm_source=github&utm_medium=readme&utm_content=org-profile"><b>Developer guides</b></a> ·
+  <a href="https://developers.anpheros.com/docs?utm_source=github&utm_medium=readme&utm_content=org-profile">API reference</a> ·
+  <a href="https://github.com/anpheros/anpheros-sdk">SDKs &amp; examples</a> ·
+  <a href="https://platform.anpheros.com/?utm_source=github&utm_medium=readme&utm_content=org-profile">Platform</a> ·
+  <a href="https://anpheros.com/?utm_source=github&utm_medium=readme&utm_content=org-profile">anpheros.com</a>
+</p>
+
+<p align="center">
+  <a href="https://developers.anpheros.com/guides/healthcare-api?utm_source=github&utm_medium=readme&utm_content=org-profile">Healthcare API</a> ·
+  <a href="https://developers.anpheros.com/guides/healthcare-api-platform?utm_source=github&utm_medium=readme&utm_content=org-profile">Healthcare API platform</a> ·
+  <a href="https://developers.anpheros.com/guides/fhir?utm_source=github&utm_medium=readme&utm_content=org-profile">FHIR platform</a>
 </p>
 
 <p align="center">
@@ -67,7 +73,7 @@ Anpheros' own patient app is a client of the same public API as everyone else, s
 
 ## Quick start
 
-Get a sandbox key instantly: sign in with Google on the [dashboard](https://platform.anpheros.com/dashboard/) and press **Get a sandbox key**. The sandbox is free, and every sandbox project comes with its own 30 synthetic patients.
+Get a sandbox key instantly: sign in with Google on the [dashboard](https://platform.anpheros.com/dashboard/?utm_source=github&utm_medium=readme&utm_content=org-profile) and press **Get a sandbox key**. The sandbox is free, and every sandbox project comes with its own 30 synthetic patients.
 
 ```bash
 npm install @anpheros/sdk          # or: dart pub add anpheros_sdk
@@ -88,6 +94,16 @@ const ctx = await anpheros.context.build({ patient: patient.id, task: 'weekly ch
 
 Runnable examples — a quickstart in TypeScript and Dart, a consent web app, an LLM example and a FHIR transaction — are in **[anpheros-sdk/examples](https://github.com/anpheros/anpheros-sdk/tree/main/examples)**.
 
+## MCP server for AI agents
+
+Connect Claude, Cursor, VS Code or any MCP client to FHIR health data: `https://platform.anpheros.com/mcp` (streamable HTTP), listed in the official MCP Registry as `com.anpheros/fhir`. With a sandbox key the agent works on your 30 synthetic patients: patient context, International Patient Summary, timeline, FHIR search, lab import and validation. People can also connect their own record through OAuth, with a consent screen and read-only access by default.
+
+```bash
+claude mcp add --transport http anpheros-fhir https://platform.anpheros.com/mcp --header "X-API-Key: sk_test_…"
+```
+
+Configs for every client: [anpheros/mcp-server](https://github.com/anpheros/mcp-server) · guide: [MCP server](https://developers.anpheros.com/guides/mcp?utm_source=github&utm_medium=readme&utm_content=org-profile)
+
 ## Building AI healthcare applications and agents
 
 Anpheros is not an AI platform and does not run models. It is the data layer an AI application or agent calls:
@@ -97,7 +113,7 @@ Anpheros is not an AI platform and does not run models. It is the data layer an 
 - **facts kept apart from AI output** — values written by an AI are recorded as AI-authored and kept in a separate section of later contexts;
 - **accountability** — every context request is recorded and visible to the patient.
 
-It works with any model — hosted or local — because the model call is your own code. Guides: [AI healthcare applications](https://developers.anpheros.com/guides/ai-healthcare) · [AI agents and medical data](https://developers.anpheros.com/guides/ai-agents-medical-data) · [LLM applications and healthcare data](https://developers.anpheros.com/guides/llm-healthcare-data) · [Building with AI coding tools](https://developers.anpheros.com/guides/ai-developers)
+It works with any model — hosted or local — because the model call is your own code. Guides: [AI healthcare applications](https://developers.anpheros.com/guides/ai-healthcare?utm_source=github&utm_medium=readme&utm_content=org-profile) · [AI agents and medical data](https://developers.anpheros.com/guides/ai-agents-medical-data?utm_source=github&utm_medium=readme&utm_content=org-profile) · [LLM applications and healthcare data](https://developers.anpheros.com/guides/llm-healthcare-data?utm_source=github&utm_medium=readme&utm_content=org-profile) · [Building with AI coding tools](https://developers.anpheros.com/guides/ai-developers?utm_source=github&utm_medium=readme&utm_content=org-profile)
 
 ## Standards
 
@@ -107,25 +123,36 @@ It works with any model — hosted or local — because the model call is your o
 | International Patient Summary | `Patient/$summary`, validated with the official HL7 validator against the IPS implementation guide (0 errors) |
 | SMART App Launch | standalone launch with PKCE and SMART v2 scopes; OpenID Connect `fhirUser` |
 | HL7 v2 | `ORU^R01` laboratory results imported as FHIR Observations |
+| SMART Health Links | share a record by link or QR code (`/shl`) |
 | Terminologies | LOINC, ICD-10, ATC, UCUM |
 
 ## Security and privacy, in short
 
-EU data residency · isolation between applications with per-application patient identifiers · consent chosen and revocable by the patient · provenance on every write · an access log the patient can see · documents stored immutable and encrypted with a customer-managed key · a separate sandbox with synthetic patients. Details: [Security, privacy and data residency](https://developers.anpheros.com/guides/security).
+EU data residency · isolation between applications with per-application patient identifiers · consent chosen and revocable by the patient · provenance on every write · an access log the patient can see · documents stored immutable and encrypted with a customer-managed key · a separate sandbox with synthetic patients. Details: [Security, privacy and data residency](https://developers.anpheros.com/guides/security?utm_source=github&utm_medium=readme&utm_content=org-profile).
 
 ## Repositories
 
 | Repository | What it contains |
 |---|---|
-| [**anpheros-sdk**](https://github.com/anpheros/anpheros-sdk) | the official TypeScript and Dart / Flutter SDKs and runnable examples (Apache-2.0) |
+| [**anpheros-sdk**](https://github.com/anpheros/anpheros-sdk) | the official TypeScript and Dart / Flutter SDKs and runnable examples |
+| [**mcp-server**](https://github.com/anpheros/mcp-server) | the hosted FHIR MCP server for AI agents: tools and client configs |
+| [**agent-skills**](https://github.com/anpheros/agent-skills) | Agent Skill, Claude Code plugin, Cursor rules and AGENTS.md |
+| [**fhir-api-openapi**](https://github.com/anpheros/fhir-api-openapi) | OpenAPI 3.1 spec and Postman collection |
+| [**fhir-synthetic-patients**](https://github.com/anpheros/fhir-synthetic-patients) | 30 synthetic patients as FHIR R4 Bundles and NDJSON |
+| [**ips-examples**](https://github.com/anpheros/ips-examples) | International Patient Summary documents in FHIR R4 |
+| [**fhir-validate-action**](https://github.com/anpheros/fhir-validate-action) | GitHub Action: validate FHIR R4 JSON in CI |
+| [**lab-results-to-fhir**](https://github.com/anpheros/lab-results-to-fhir) | CLI: CSV / HL7 v2 lab reports → FHIR Observations |
+| [**healthcare-app-starters**](https://github.com/anpheros/healthcare-app-starters) | Next.js and Flutter health app templates |
+
+All Apache-2.0.
 
 ## Status
 
-Anpheros Platform is in **private beta**: EU-hosted, single zone without automatic failover, no contractual SLA yet. The sandbox is free and self-service: sign in with Google on the [dashboard](https://platform.anpheros.com/dashboard/) and get a key instantly, with 30 synthetic patients per sandbox project. Production is for verified organisations with a data processing agreement, and the first month of production is free. Not available yet: SMART EHR launch, a Model Context Protocol (MCP) server.
+Anpheros Platform is in **private beta**: EU-hosted, single zone without automatic failover, no contractual SLA yet. The sandbox is free and self-service: sign in with Google on the [dashboard](https://platform.anpheros.com/dashboard/?utm_source=github&utm_medium=readme&utm_content=org-profile) and get a key instantly, with 30 synthetic patients per sandbox project. Production is for verified organisations with a data processing agreement, and the first month of production is free. Not available yet: SMART EHR launch.
 
 ## For patients
 
-**Anpheros Daily** is the patient and family app built on the same record — symptoms, vital signs, medications, lab results, documents, appointments and an assistant that answers with the person's own data. Android, macOS and the web: [anpheros.com](https://anpheros.com/).
+**Anpheros Daily** is the patient and family app built on the same record — symptoms, vital signs, medications, lab results, documents, appointments and an assistant that answers with the person's own data. Android, macOS and the web: [anpheros.com](https://anpheros.com/?utm_source=github&utm_medium=readme&utm_content=org-profile).
 
 ## Contact
 
